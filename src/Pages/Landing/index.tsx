@@ -1,10 +1,23 @@
 import React from 'react';
+import Header from '../../components/Header';
+import Container from '../../components/MainContainer/styles';
 
-// import { Container } from './styles';
+import { MainBanner, MainBannerContentLeft } from './styles';
 
 const Landing: React.FC = () => {
   return (
-    <h1>Landing</h1>
+    <>
+      <Header />
+
+      <MainBanner>
+        <Container>
+          <MainBannerContentLeft>
+            <p>Oi</p>
+
+          </MainBannerContentLeft>
+        </Container>
+      </MainBanner>
+    </>
   );
 }
 
