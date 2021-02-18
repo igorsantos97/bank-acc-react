@@ -41,33 +41,20 @@ export const MainBannerContentLeft = styled.div`
   }
 `;
 
-export const InputForm = styled.input`
-  margin-top: 50px;
-  border: none;
-  border-bottom: 1px solid #878686;
-  width: 100%;
-  padding: 10px 14px;
-  font-size: 14px;
-
-  &::placeholder {
-    color: #878686;
-  }
-
-  &:focus {
-    border-bottom: 1px solid #68de5a;
-  }
-
-  & + input {
-    margin-top: 30px;
-  }
-`;
-
 export const Form = styled.form`
   padding: 40px 46px;
   background: #fff;
   min-height: 450px;
   border-radius: 8px;
   width: 350px;
+
+  input:nth-child(2) {
+    margin-top: 0;
+  }
+
+  input + input {
+    margin-top: 30px;
+  }
 
   button {
     background: #d8d8d8;
@@ -88,3 +75,5 @@ export const MainBannerContentRight = styled.div`
     }
   }
 `;
+
+export const About = styled.section``;
