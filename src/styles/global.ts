@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
     body {
         background: #8C52E5;
+        font-weight: 300 !important;
     }
 
     * {
@@ -20,5 +21,9 @@ export default createGlobalStyle`
     a {
         color: #000;
         text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 200 !important;
     }
 `;
