@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { InputHTMLAttributes } from 'react'
 
 import { Input } from './styles';
 
-const InputForm: React.FC = ({ children, ...props }) => {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+}
+
+const InputForm: React.FC<InputProps> = ({ children, ...props }) => {
   return (
     <Input {...props}>
       {children}
