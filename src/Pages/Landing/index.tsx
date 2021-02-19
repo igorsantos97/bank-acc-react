@@ -40,7 +40,7 @@ const Landing: React.FC = () => {
                 <InputForm name="name" placeholder="Nome completo" />
                 <InputForm name="password" placeholder="Digite sua senha" />
                 <InputForm name="confirmPassword" placeholder="Confirme sua senha" />
-                <ButtonSumit>Continuar <FaArrowRight /></ButtonSumit>
+                <ButtonSumit type="submit">Continuar <FaArrowRight /></ButtonSumit>
               </Form>
             </MainBannerContentRight>
           </MainBannerContent>

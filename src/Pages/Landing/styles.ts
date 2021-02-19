@@ -10,6 +10,20 @@ export const MainBanner = styled.section`
   min-height: 100vh;
   display: flex;
   align-items: stretch;
+
+  animation: 0.6s forwards animationBanner;
+  animation-delay: 0.3s;
+  opacity: 0;
+
+  @keyframes animationBanner {
+    from {
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 `;
 
 export const MainBannerContent = styled.div`
@@ -25,6 +39,10 @@ export const MainBannerContentLeft = styled.div`
   max-width: 280px;
   color: #fff;
   font-size: 30px;
+  opacity: 0;
+
+  animation: 0.8s forwards toRight;
+  animation-delay: 0.6s;
 
   span {
     display: block;
@@ -64,6 +82,10 @@ export const Form = styled.form`
 `;
 
 export const MainBannerContentRight = styled.div`
+  opacity: 0;
+  animation: 0.6s forwards toRight;
+  animation-delay: 0.6s;
+
   @media (max-width: 676px) {
     margin: 0 auto;
     max-width: 100%;
