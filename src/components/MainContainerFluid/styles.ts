@@ -5,6 +5,11 @@ export const ContainerFluid = styled.div`
   margin: 0 auto;
   width: 100%;
   padding: 0 16px;
+  z-index: 100;
+
+  .logo {
+    display: inline-block;
+  }
 `;
 
 export default ContainerFluid;

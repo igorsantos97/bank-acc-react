@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <MainHeader>
       <MainContainerFluid>
-        <Link to="/">
+        <Link to="/" className="logo">
           <img src={mainLogo} alt="Logo da Gama Academy" />
         </Link>
       </MainContainerFluid>
