@@ -26,4 +26,8 @@ export default createGlobalStyle`
     h1, h2, h3, h4, h5, h6 {
         font-weight: 200 !important;
     }
+
+    @keyframes toRight {
+        from { opacity: 0; transform: translateX(-30px) } to { opacity: 1; transform: translateX(0px) }
+    }
 `;
