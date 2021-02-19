@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
-import { ButtonSubmit } from './styles'
+import { ButtonSubmit } from './styles';
 
-const ButtonSumit: React.FC = ({ children, ...props }) => {
+interface InputProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+
+}
+
+const ButtonSumit: React.FC<InputProps> = ({ children, ...props }) => {
   return (
     <ButtonSubmit {...props}>{children}</ButtonSubmit>
   )
