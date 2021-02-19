@@ -1,31 +1,33 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ButtonSumit from '../../components/ButtonSubmit';
 import Header from '../../components/Header';
 import InputForm from '../../components/InputForm';
+import TitleForm from '../../components/TitleForm';
 
-import { Form, FormTitle, FormButtonSubmit } from './styles';
+import { Form, BoxLogin } from './styles';
 
 const Login: React.FC = () => {
   return (
     <>
       <Header />
-      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
+
+      <BoxLogin>
         <Form>
-          <FormTitle>Faça o login</FormTitle>
+          <TitleForm>Faça o login</TitleForm>
 
           <InputForm name="user" placeholder="Digite seu usuário" />
           <InputForm name="password" placeholder="Digite sua senha" type="password" />
 
-          <FormButtonSubmit>
+          <ButtonSumit>
             Continuar<FaArrowRight />
-          </FormButtonSubmit>
+          </ButtonSumit>
 
-          <Link to="#">Esqueci minha senha</Link>
-          <Link to="#">Ainda não sou cliente</Link>
-
+          <Link to="/recover">Esqueci minha senha</Link>
+          <Link to="/">Ainda não sou cliente</Link>
         </Form>
-      </div>
+      </BoxLogin>
     </>
   )
 }

@@ -1,23 +1,10 @@
 import styled from 'styled-components';
 
-export const Title = styled.h1``;
-
-export const FormContainer = styled.form``;
-
-export const Container = styled.div`
-  width: 100%;
+export const BoxLogin = styled.div`
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px 0;
-`;
-
-export const Img = styled.img`
-  position: absolute;
-  left: 65px;
-  height: 65px;
-  top: 58px;
+  padding: 140px 10px;
 `;
 
 export const Form = styled.form`
@@ -47,29 +34,16 @@ export const Form = styled.form`
       margin-top: 10px;
     }
   }
-`;
 
-export const FormTitle = styled.h2`
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-`;
+  button {
+    background: #68de5a;
+    margin-bottom: 38px;
+    margin-top: 36px;
+    padding: 10px 35px;
+    color: #fff;
 
-export const FormButtonSubmit = styled.button`
-  background: #68de5a;
-  margin-bottom: 38px;
-  align-items: center;
-  margin-top: 36px;
-  width: 100%;
-  padding: 10px 35px;
-  display: flex;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 20px;
-  border: none;
-  justify-content: space-between;
-
-  svg {
-    font-size: 22px;
+    svg {
+      font-size: 22px;
+    }
   }
 `;
