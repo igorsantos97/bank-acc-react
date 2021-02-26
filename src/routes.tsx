@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Dashboard from './Pages/Dashboard';
 
 import Error from './Pages/Error';
 import Landing from './Pages/Landing';
@@ -16,6 +17,7 @@ const Routes: React.FC = () => {
                 <Route path="/login" component={Login} />
                 <Route path="/recover" component={Recover} />
                 <Route path="/error" component={Error} />
+                <Route path="/dashboard" component={Dashboard} />
             </Switch>
         </BrowserRouter>
     );
