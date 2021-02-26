@@ -1,7 +1,6 @@
 import React from 'react';
 
-import MainContainerFluid from '../MainContainerFluid'
-import { MainHeader } from './styles';
+import { MainHeader, MainHeaderContainer } from './styles';
 
 import mainLogo from '../../assets/main-logo.png';
 import { Link } from 'react-router-dom';
@@ -9,11 +8,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <MainHeader>
-      <MainContainerFluid>
+      <MainHeaderContainer>
         <Link to="/" className="logo">
           <img src={mainLogo} alt="Logo da Gama Academy" />
         </Link>
-      </MainContainerFluid>
+      </MainHeaderContainer>
     </MainHeader>
   )
 }
